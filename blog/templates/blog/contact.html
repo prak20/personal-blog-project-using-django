@@ -1,0 +1,38 @@
+{% extends 'blog/index.html' %}
+{% load static %}
+{% block content %}
+<div class="col-sm-10">
+<h3 class="text-white my-5">Contact Page</h3>
+
+<!--Contact Form -->
+<form>
+<!--Grid row-->
+<div class="form-row">
+
+<!--Grid column-->
+<div class="form-group col-md-6">
+<label for="inputName">Your name</label>
+<input type="text" id="inputName" class="form-control">
+</div>
+
+<!--Grid column-->
+<div class="form-group col-md-6">
+<label for="inputEmail">Your Email</label>
+<input type="email" id="inputEmail" class="form-control">
+</div>
+<!--Grid column-->
+<div class="form-group col-md-12">
+<label for="inputAddress" >Your Address</label>
+<input type="text" id="inputAddress" class="form-control">
+</div>
+<!--Grid column-->
+<div class="form-group col-md-12">
+<label for="message" >Your Message</label>
+<textarea id="message" rows="3" class="form-control"></textarea>
+</div>
+<!--Grid button-->
+<button type="submit" class="btn btn-primary">Send</button>
+</form>
+
+</div>
+{% endblock content %}
